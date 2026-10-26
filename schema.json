@@ -257,6 +257,28 @@
         }
       }
     },
+    "allowedFixes": {
+      "description": "규정 안에서 도구가 자동으로 고쳐도 되는 것. 없으면 자르기·크기 조정·압축만 한다. 배경·밝기·피부는 규격과 상관없이 자동으로 고치지 않는다(배경 단색·밝기는 사용자가 켤 때만 도구가 한다).",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rotate": {
+          "description": "두 눈을 잇는 선의 기울기가 maxDeg(도) 이하이면 그만큼 돌려 바로 세운 뒤 자른다. 넘으면 고치지 않고 다시 찍기를 안내한다.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "maxDeg"
+          ],
+          "properties": {
+            "maxDeg": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 15
+            }
+          }
+        }
+      }
+    },
     "notes": {
       "description": "언어별 한 줄 요약.",
       "type": "object",

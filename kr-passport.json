@@ -28,6 +28,7 @@
     "dpi": 300
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
   "notes": {
     "ko": "발급 신청일 기준 6개월 이내 촬영, 무표정, 입 다물기, 컬러렌즈·색안경 금지"
   },
