@@ -6,7 +6,7 @@
   "photoMm": [35, 45],
   "headMm": { "min": 32, "max": 36, "target": 34 },
   "topMarginMm": 4.5,
-  "background": { "kind": "white", "minLuma": 215, "maxStd": 18 },
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
   "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
   "checks": {
     "faceCount": true,
