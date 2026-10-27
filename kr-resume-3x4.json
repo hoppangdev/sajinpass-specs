@@ -26,7 +26,8 @@
     "hRange": [472, 472],
     "format": "jpeg",
     "maxKB": 500,
-    "dpi": 300
+    "dpi": 300,
+    "unofficial": ["px", "maxKB"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
