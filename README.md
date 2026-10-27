@@ -11,12 +11,12 @@
 | [`kr-passport.json`](kr-passport.json) | 대한민국 여권 (성인) |
 | [`kr-passport-infant.json`](kr-passport-infant.json) | 대한민국 여권 (36개월 이하 영유아: 입을 조금 벌려도 됨) |
 | [`kr-id.json`](kr-id.json) | 주민등록증·운전면허증 (3.5×4.5cm. 법령에 머리 길이 기준이 없어 여권 기준으로 맞춤) |
-| [`kr-driver-license.json`](kr-driver-license.json) | 운전면허증 온라인 갱신·재발급 (3.5×4.5cm. 접수 파일은 JPG 250KB 이하, 200~500px, 적정 350×450px) |
+| [`kr-driver-license.json`](kr-driver-license.json) | 운전면허증 온라인 갱신·재발급 (3.5×4.5cm, 머리 길이 3.2~3.6cm. 접수 파일은 JPG 500KB 이하, 413×531px 권장, 395~431×507~550px만 업로드) |
 | [`kr-resume-3x4.json`](kr-resume-3x4.json) | 반명함판 3×4cm (이력서). 공식 규정이 없는 관습 크기(`official: false`) |
 | [`kr-suneung.json`](kr-suneung.json) | 수능 응시원서 (여권용 규격 3.5×4.5cm, 머리 길이 3.2~3.6cm. 온라인 사전입력 JPG 500KB 이하·413×531px 권장) |
-| [`kr-toeic.json`](kr-toeic.json) | 토익 접수 (얼굴 길이 3.2~3.6cm·흰 배경, JPG 500KB 이하. 최신 안내에 픽셀 기준이 없어 여권 규격 413×531px로 만듦) |
+| [`kr-toeic.json`](kr-toeic.json) | 토익 접수 (얼굴 길이 3.2~3.6cm·흰 배경, JPG 500KB 이하. 공개 안내에 픽셀 기준이 없어 여권 규격 413×531px로 만듦, 사진패스 권장) |
 | [`kr-arc.json`](kr-arc.json) | 외국인등록증(ARC)·한국 비자 3.5×4.5cm, 얼굴 길이 2.5~3.5cm, 흰 배경 (출입국·외국인정책본부). 공식 픽셀 기준 없음, 413×531px로 만듦 |
-| [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`) |
+| [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`). 공식 픽셀·용량 기준은 없음 |
 | [`vn-evisa.json`](vn-evisa.json) | 베트남 전자비자 4×6cm, JPG 2MB 미만, 흰 배경, 안경 금지. 머리 길이·픽셀 기준이 없어 472×709px·1MB 이하로 만듦 |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
 

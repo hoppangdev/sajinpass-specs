@@ -20,18 +20,18 @@
     "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
   },
   "digital": {
-    "px": [350, 450],
-    "wRange": [200, 500],
-    "hRange": [200, 500],
+    "px": [413, 531],
+    "wRange": [395, 431],
+    "hRange": [507, 550],
     "format": "jpeg",
-    "maxKB": 250,
-    "dpi": 254
+    "maxKB": 500,
+    "dpi": 300
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
   "notes": {
-    "ko": "도로교통공단 안전운전 통합민원: 3.5×4.5cm 탈모·상반신·무배경 컬러 사진(6개월 이내), 온라인 접수 파일은 JPG 250KB 이하, 가로·세로 200~500px(적정 350×450px). 머리 길이 기준이 없어 여권 기준(32~36mm)으로 맞춤. dpi는 350px이 3.5cm가 되는 254"
+    "ko": "도로교통공단 안전운전 통합민원 사진규격(경찰청·도로교통공단, 도로교통법 시행규칙 제57조제1항): 3.5×4.5cm 탈모·상반신·흰색 배경 컬러 사진(6개월 이내), 머리 길이(정수리~턱) 3.2~3.6cm, 인위적 합성 불가. 홈페이지 접수 파일은 JPG 500KB 이하, 가로 413·세로 531픽셀 권장, 가로 395~431·세로 507~550픽셀만 업로드 가능, 300dpi 권장. 여권 온라인 파일과 같은 규격"
   },
   "source": "https://www.safedriving.or.kr/etGuide/selectEtGuide04.do",
-  "checkedAt": "2026-10-27"
+  "checkedAt": "2026-10-28"
 }
