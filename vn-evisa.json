@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "vn-evisa",
+  "name": "베트남 전자비자 (e-visa)",
+  "audience": "adult",
+  "photoMm": [40, 60],
+  "headMm": { "min": 34, "max": 46, "target": 40 },
+  "topMarginMm": 6,
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "noGlasses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [472, 709],
+    "wRange": [300, 2000],
+    "hRange": [450, 3000],
+    "format": "jpeg",
+    "maxKB": 1000,
+    "dpi": 300
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 3, "rows": 1, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "베트남 전자비자 공식 사이트(evisa.gov.vn) 안내: 최근 찍은 4×6cm 사진, JPG·JPEG 2MB 미만, 정면, 모자·안경 없이, 흰 배경. 머리 길이와 픽셀 기준은 없어 머리를 사진 높이의 약 3분의 2로 맞추고 300dpi 472×709px로 만듦. 옛 포털 안내와 대행사 자료에 더 작은 용량 제한이 있어 1MB 이하로 만듦",
+    "en": "Vietnam e-visa portal (evisa.gov.vn): recent 4x6 cm photo, JPG/JPEG under 2 MB, front facing, no hat or glasses, white background. No head size or pixel rule, so the head is about two thirds of the height and the file is 472x709 px at 300 dpi, kept under 1 MB because older guidance lists smaller limits"
+  },
+  "source": "https://evisa.gov.vn/instruction",
+  "checkedAt": "2026-10-27"
+}

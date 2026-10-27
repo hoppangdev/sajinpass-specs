@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "eu-schengen",
+  "name": "유럽 솅겐 비자 (독일·프랑스 등)",
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 32, "max": 36, "target": 34 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [413, 531],
+    "wRange": [413, 1200],
+    "hRange": [531, 1600],
+    "format": "jpeg",
+    "maxKB": 500,
+    "dpi": 300
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "주한독일대사관: 3.5×4.5cm, 6개월 이내, 얼굴(턱~정수리, 머리카락 제외) 32~36mm(사진의 70~80%), 밝은 단색 배경(워킹홀리데이는 흰색). 프랑스(France-Visas)도 ICAO 기준 얼굴 70~80%·밝은 단색 배경. 종이 사진을 내는 규격이라 공식 픽셀·용량 기준 없음: 파일은 300dpi 413×531px, 500KB 이하로 만듦",
+    "en": "German Embassy Seoul: 35x45 mm, within 6 months, face chin to crown (excluding hair) 32-36 mm (70-80% of the photo), plain light background (white for working holiday). France-Visas follows ICAO (face 70-80%, plain light background). Printed photo; no official pixel or file size rule, so the file is 413x531 px at 300 dpi under 500 KB"
+  },
+  "source": "https://seoul.diplo.de/kr-ko/service/visa-einreise/1887970-1887970",
+  "sourceDigital": "https://seoul.diplo.de/resource/blob/1887220/6e3eee9fd4d86e16aaefe0e92d809332/fotoanweisung-data.pdf",
+  "checkedAt": "2026-10-27"
+}
