@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "kr-kuksiwon",
+  "name": "보건의료인 국가시험 (국시원)",
+  "unofficial": ["headMm", "background"],
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 32, "max": 36, "target": 34 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [413, 531],
+    "wRange": [276, 2000],
+    "hRange": [354, 2600],
+    "format": "jpeg",
+    "accept": ["jpeg", "png"],
+    "maxKB": 500,
+    "dpi": 300,
+    "unofficial": ["px", "maxKB"]
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "한국보건의료인국가시험원 자주 묻는 질문: 6개월 이내 촬영, 모자를 쓰지 않고 정면을 본 상반신 컬러 사진, 3.5×4.5cm, 가로 276px·세로 354px 이상, 해상도 200dpi 이상, JPG·PNG. 시험 날 감독관이 사진으로 본인 확인을 하고 합격 뒤 면허증에도 쓰임. 머리 길이·배경색·용량 기준은 원문에 없어 여권 비율(머리 32~36mm), 밝은 단색 배경, 413×531px(300dpi)·500KB 이하로 만듦(사진패스 권장). 허용 px 범위의 위쪽 끝은 공식 기준이 없어 넉넉히 잡음"
+  },
+  "source": "https://www.kuksiwon.or.kr/faq/brd/m_52/view.do?seq=60",
+  "sourceDigital": "https://www.kuksiwon.or.kr/faq/brd/m_52/view.do?seq=13",
+  "checkedAt": "2026-10-28"
+}

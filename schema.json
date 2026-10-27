@@ -40,6 +40,19 @@
       "description": "공식 규정이 있는 규격이면 true(기본). false면 발급 기관 규정이 없고 흔히 쓰는 크기를 담은 관습 규격이며, source를 생략할 수 있다.",
       "type": "boolean"
     },
+    "unofficial": {
+      "description": "공식 원문에 없어 사진패스가 정한 값. photoMm은 사진 크기, headMm은 머리 길이, background는 배경색이다. 화면에는 '사진패스 권장'으로 표시한다. 파일 픽셀·용량은 digital.unofficial에 적는다.",
+      "type": "array",
+      "items": {
+        "enum": [
+          "photoMm",
+          "headMm",
+          "background"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
     "audience": {
       "description": "대상. 영유아 규격은 입 벌림 점검을 건너뛴다.",
       "enum": [
@@ -226,6 +239,22 @@
           "enum": [
             "jpeg"
           ]
+        },
+        "accept": {
+          "description": "제출처가 받는 파일 형식. 없으면 format만 받는다. 사진패스가 만드는 파일은 늘 format이다.",
+          "type": "array",
+          "items": {
+            "enum": [
+              "jpeg",
+              "png",
+              "gif"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "contains": {
+            "const": "jpeg"
+          }
         },
         "maxKB": {
           "type": "integer",
