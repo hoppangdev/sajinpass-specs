@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "us-visa",
+  "name": "미국 비자 (DS-160)",
+  "audience": "adult",
+  "photoMm": [50.8, 50.8],
+  "headMm": { "min": 25.4, "max": 35, "target": 31 },
+  "headTop": "hair",
+  "topMarginMm": 3.5,
+  "background": { "kind": "white", "minLuma": 205, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["hairLine", "noGlasses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [600, 600],
+    "wRange": [600, 1200],
+    "hRange": [600, 1200],
+    "format": "jpeg",
+    "maxKB": 240,
+    "dpi": 300
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 2, "rows": 1, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "2×2인치 정사각형, 최근 6개월 이내 촬영, 흰색·미색 배경, 무표정에 두 눈을 뜬 정면, 안경 금지(의료 사유 예외), 머리 길이는 턱 끝부터 머리 꼭대기까지 사진 높이의 50~69%",
+    "en": "2x2 in square, taken within 6 months, plain white or off-white background, neutral expression with both eyes open, no eyeglasses (rare medical exceptions), head 1 to 1 3/8 in (50-69% of image height) from chin to top of head"
+  },
+  "source": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html",
+  "sourceDigital": "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos/digital-image-requirements.html",
+  "checkedAt": "2026-10-27"
+}

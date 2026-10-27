@@ -52,7 +52,7 @@
       "$ref": "#/$defs/positivePair"
     },
     "headMm": {
-      "description": "턱 끝에서 정수리까지 길이(mm). target은 자르기 배율을 정한다.",
+      "description": "턱 끝에서 머리 꼭대기(headTop)까지 길이(mm). target은 자르기 배율을 정한다.",
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -75,8 +75,15 @@
         }
       }
     },
+    "headTop": {
+      "description": "머리 길이를 재는 위쪽 끝. crown(기본)은 머리카락을 뺀 정수리, hair는 머리카락 끝이다(미국 비자처럼 머리카락까지 재는 규격).",
+      "enum": [
+        "crown",
+        "hair"
+      ]
+    },
     "topMarginMm": {
-      "description": "정수리에서 사진 위 가장자리까지 거리(mm).",
+      "description": "머리 꼭대기(headTop)에서 사진 위 가장자리까지 거리(mm).",
       "type": "number",
       "minimum": 0
     },
@@ -179,8 +186,10 @@
           "items": {
             "enum": [
               "crownLine",
+              "hairLine",
               "aloneInPhoto",
               "glasses",
+              "noGlasses",
               "lenses",
               "takenWithin6Months"
             ]
