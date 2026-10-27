@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "kr-driver-license",
+  "name": "운전면허증 (온라인 갱신·재발급)",
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 32, "max": 36, "target": 34 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [350, 450],
+    "wRange": [200, 500],
+    "hRange": [200, 500],
+    "format": "jpeg",
+    "maxKB": 250,
+    "dpi": 254
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "도로교통공단 안전운전 통합민원: 3.5×4.5cm 탈모·상반신·무배경 컬러 사진(6개월 이내), 온라인 접수 파일은 JPG 250KB 이하, 가로·세로 200~500px(적정 350×450px). 머리 길이 기준이 없어 여권 기준(32~36mm)으로 맞춤. dpi는 350px이 3.5cm가 되는 254"
+  },
+  "source": "https://www.safedriving.or.kr/etGuide/selectEtGuide04.do",
+  "checkedAt": "2026-10-27"
+}
