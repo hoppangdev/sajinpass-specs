@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "kr-passport-infant",
+  "name": "대한민국 여권 (영유아)",
+  "audience": "infant",
+  "photoMm": [35, 45],
+  "headMm": { "min": 32, "max": 36, "target": 34 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
+  "expression": { "mouthOpen": true, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "aloneInPhoto", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [413, 531],
+    "wRange": [395, 431],
+    "hRange": [507, 550],
+    "format": "jpeg",
+    "maxKB": 500,
+    "dpi": 300
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "36개월 이하 영유아는 입을 조금 벌려도 됨. 그 밖에는 성인과 같음(6개월 이내 촬영, 눈을 뜨고 정면, 보호자·사물이 보이지 않게)"
+  },
+  "source": "https://www.passport.go.kr/home/kor/contents.do?menuPos=32",
+  "sourceDigital": "https://www.passport.go.kr/home/kor/contents.do?menuPos=12",
+  "checkedAt": "2026-10-26"
+}
