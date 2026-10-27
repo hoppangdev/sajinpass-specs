@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "eu-schengen",
-  "name": "유럽 솅겐 비자 (독일·프랑스 등)",
+  "name": "유럽 쉥겐 비자 (독일·프랑스 등)",
   "audience": "adult",
   "photoMm": [35, 45],
   "headMm": { "min": 32, "max": 36, "target": 34 },
