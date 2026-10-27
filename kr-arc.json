@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "kr-arc",
+  "name": "외국인등록증·한국 비자",
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 25, "max": 35, "target": 32 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [413, 531],
+    "wRange": [395, 431],
+    "hRange": [507, 550],
+    "format": "jpeg",
+    "maxKB": 500,
+    "dpi": 300
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "출입국·외국인정책본부 외국인등록증 안내: 여권용 사진(3.5×4.5cm), 얼굴 길이 2.5~3.5cm, 무배경 또는 흰 배경에 테두리 없음, 신청일 기준 6개월 이내, 정면, 색안경·모자 등 얼굴을 가리는 것 금지(의료 목적 제외). 재외공관 비자 신청 사진도 3.5×4.5cm 흰 배경 6개월 이내 컬러 정면이라 같은 규격으로 만듦. 공식 픽셀 기준 없음, 여권 파일과 같은 413×531px로 만듦",
+    "en": "Korea Immigration Service ARC guide: passport-size photo (3.5x4.5 cm), face length 2.5-3.5 cm, plain or white background without a border, taken within 6 months, facing forward, no sunglasses or hat unless for medical reasons. Korean embassies ask for the same 3.5x4.5 cm white-background colour photo for visa applications. No official pixel size, so the file is 413x531 px like the Korean passport file"
+  },
+  "source": "https://www.immigration.go.kr/bbs/moj/93/559234/artclView.do",
+  "checkedAt": "2026-10-27"
+}
