@@ -238,7 +238,7 @@
       }
     },
     "print": {
-      "description": "인화 배치. sheetPx는 300dpi 기준.",
+      "description": "인화 배치. sheetPx는 dpi(없으면 300) 기준.",
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -267,6 +267,11 @@
         },
         "cutLines": {
           "type": "boolean"
+        },
+        "dpi": {
+          "description": "선택. 인화지 해상도. 없으면 300. 원문이 더 높은 인화 해상도를 요구하면(독일 600dpi) 적는다.",
+          "type": "integer",
+          "exclusiveMinimum": 0
         }
       }
     },

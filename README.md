@@ -15,6 +15,8 @@
 | [`kr-resume-3x4.json`](kr-resume-3x4.json) | 반명함판 3×4cm (이력서). 공식 규정이 없는 관습 크기(`official: false`) |
 | [`kr-suneung.json`](kr-suneung.json) | 수능 응시원서 (여권용 규격 3.5×4.5cm, 머리 길이 3.2~3.6cm. 온라인 사전입력 JPG 500KB 이하·413×531px 권장) |
 | [`kr-toeic.json`](kr-toeic.json) | 토익 접수 (얼굴 길이 3.2~3.6cm·흰 배경, JPG 500KB 이하. 최신 안내에 픽셀 기준이 없어 여권 규격 413×531px로 만듦) |
+| [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`) |
+| [`vn-evisa.json`](vn-evisa.json) | 베트남 전자비자 4×6cm, JPG 2MB 미만, 흰 배경, 안경 금지. 머리 길이·픽셀 기준이 없어 472×709px·1MB 이하로 만듦 |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
 
 ## 필드
@@ -34,7 +36,7 @@
 | `expression` | 입 벌림·미소 허용 여부, 눈을 떠야 하는지 |
 | `checks` | 켜고 끄는 자동 점검과 사용자가 직접 확인할 항목(`manual`: `crownLine` 정수리 선, `hairLine` 머리카락 끝 선, `aloneInPhoto` 보호자·사물이 안 보이는지, `glasses` 안경 반사, `noGlasses` 안경을 벗었는지, `lenses` 컬러렌즈·색안경, `takenWithin6Months` 6개월 이내) |
 | `digital` | 온라인 제출 파일 규격: 크기(px)와 허용 범위, 형식, 최대 용량(KB), 해상도(dpi) |
-| `print` | 인화 배치: 인화지 크기(inch, px), 행·열 수, 자르는 선 여부 |
+| `print` | 인화 배치: 인화지 크기(inch, px), 행·열 수, 자르는 선 여부, 선택 `dpi`(없으면 300. 원문이 더 높은 인화 해상도를 요구할 때) |
 | `allowedFixes` | 자동으로 고쳐도 되는 것(선택). `rotate.maxDeg`: 눈 높이 기울기가 이 각도 이하이면 바로 세워 자릅니다. 배경·밝기·피부는 규격과 상관없이 자동으로 고치지 않습니다(배경 단색·밝기는 사용자가 켤 때만 도구가 합니다) |
 | `notes` | 언어별 한 줄 요약 |
 | `source`, `sourceDigital` | 규정 원문 링크. 공식 규격은 `source`가 꼭 있어야 합니다 |
