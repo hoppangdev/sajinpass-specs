@@ -14,6 +14,7 @@
 | [`kr-driver-license.json`](kr-driver-license.json) | 운전면허증 온라인 갱신·재발급 (3.5×4.5cm. 접수 파일은 JPG 250KB 이하, 200~500px, 적정 350×450px) |
 | [`kr-resume-3x4.json`](kr-resume-3x4.json) | 반명함판 3×4cm (이력서). 공식 규정이 없는 관습 크기(`official: false`) |
 | [`kr-suneung.json`](kr-suneung.json) | 수능 응시원서 (여권용 규격 3.5×4.5cm, 머리 길이 3.2~3.6cm. 온라인 사전입력 JPG 500KB 이하·413×531px 권장) |
+| [`kr-toeic.json`](kr-toeic.json) | 토익 접수 (얼굴 길이 3.2~3.6cm·흰 배경, JPG 500KB 이하. 최신 안내에 픽셀 기준이 없어 여권 규격 413×531px로 만듦) |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
 
 ## 필드
