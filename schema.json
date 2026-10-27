@@ -234,6 +234,18 @@
         "dpi": {
           "type": "integer",
           "exclusiveMinimum": 0
+        },
+        "unofficial": {
+          "description": "공식 원문에 없어 사진패스가 정한 값. px는 크기(와 허용 범위), maxKB는 용량. 없으면 둘 다 원문 값이다. 화면에는 '사진패스 권장'으로 표시한다.",
+          "type": "array",
+          "items": {
+            "enum": [
+              "px",
+              "maxKB"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
         }
       }
     },
