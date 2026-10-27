@@ -12,6 +12,7 @@
 | [`kr-passport-infant.json`](kr-passport-infant.json) | 대한민국 여권 (36개월 이하 영유아: 입을 조금 벌려도 됨) |
 | [`kr-id.json`](kr-id.json) | 주민등록증·운전면허증 (3.5×4.5cm. 법령에 머리 길이 기준이 없어 여권 기준으로 맞춤) |
 | [`kr-resume-3x4.json`](kr-resume-3x4.json) | 반명함판 3×4cm (이력서). 공식 규정이 없는 관습 크기(`official: false`) |
+| [`kr-suneung.json`](kr-suneung.json) | 수능 응시원서 (여권용 규격 3.5×4.5cm, 머리 길이 3.2~3.6cm. 온라인 사전입력 JPG 500KB 이하·413×531px 권장) |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
 
 ## 필드
