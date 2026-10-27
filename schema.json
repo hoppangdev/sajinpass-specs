@@ -19,7 +19,6 @@
     "digital",
     "print",
     "notes",
-    "source",
     "checkedAt"
   ],
   "properties": {
@@ -36,6 +35,10 @@
       "description": "화면에 보이는 규격 이름.",
       "type": "string",
       "minLength": 1
+    },
+    "official": {
+      "description": "공식 규정이 있는 규격이면 true(기본). false면 발급 기관 규정이 없고 흔히 쓰는 크기를 담은 관습 규격이며, source를 생략할 수 있다.",
+      "type": "boolean"
     },
     "audience": {
       "description": "대상. 영유아 규격은 입 벌림 점검을 건너뛴다.",
@@ -347,5 +350,23 @@
       "items": false,
       "minItems": 2
     }
+  },
+  "if": {
+    "properties": {
+      "official": {
+        "const": false
+      }
+    },
+    "required": [
+      "official"
+    ]
+  },
+  "else": {
+    "properties": {
+      "source": true
+    },
+    "required": [
+      "source"
+    ]
   }
 }
