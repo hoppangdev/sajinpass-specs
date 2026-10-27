@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "kr-history-exam",
+  "name": "한국사능력검정시험",
+  "unofficial": ["headMm", "background"],
+  "audience": "adult",
+  "photoMm": [30, 40],
+  "headMm": { "min": 28, "max": 32, "target": 30 },
+  "topMarginMm": 4,
+  "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses"]
+  },
+  "digital": {
+    "px": [120, 160],
+    "wRange": [120, 120],
+    "hRange": [160, 160],
+    "format": "jpeg",
+    "accept": ["jpeg", "gif"],
+    "maxKB": 200,
+    "dpi": 102,
+    "unofficial": ["maxKB"]
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "국사편찬위원회 자주 묻는 질문: GIF·JPG 파일만, 권장 크기 가로 120픽셀×세로 160픽셀(약 3×4cm), 본인 식별이 분명한 표준 증명 사진. 수험표 사진으로 본인을 알아볼 수 없으면 응시할 수 없음. 사진은 시험 당일 10시까지 바꿀 수 있음. 용량·촬영 기간·머리 길이·배경색 기준은 원문에 없어 반명함 비율(머리 28~32mm), 밝은 단색 배경, 200KB 이하로 만듦(사진패스 권장)"
+  },
+  "source": "https://www.historyexam.go.kr/pst/list.do?bbs=faq",
+  "checkedAt": "2026-10-28"
+}

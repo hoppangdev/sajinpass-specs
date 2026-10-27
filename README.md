@@ -15,6 +15,10 @@
 | [`kr-resume-3x4.json`](kr-resume-3x4.json) | 반명함판 3×4cm (이력서). 공식 규정이 없는 관습 크기(`official: false`) |
 | [`kr-suneung.json`](kr-suneung.json) | 수능 응시원서 (여권용 규격 3.5×4.5cm, 머리 길이 3.2~3.6cm. 온라인 사전입력 JPG 500KB 이하·413×531px 권장) |
 | [`kr-toeic.json`](kr-toeic.json) | 토익 접수 (얼굴 길이 3.2~3.6cm·흰 배경, JPG 500KB 이하. 공개 안내에 픽셀 기준이 없어 여권 규격 413×531px로 만듦, 사진패스 권장) |
+| [`kr-kuksiwon.json`](kr-kuksiwon.json) | 보건의료인 국가시험 응시원서 (국시원: 3.5×4.5cm, 276×354px 이상·200dpi 이상, JPG·PNG. 413×531px·500KB 이하로 만듦, 사진패스 권장) |
+| [`kr-history-exam.json`](kr-history-exam.json) | 한국사능력검정시험 (GIF·JPG, 권장 크기 120×160px, 약 3×4cm. 용량 기준이 없어 200KB 이하로 만듦) |
+| [`kr-korcham.json`](kr-korcham.json) | 대한상공회의소 자격시험 (컴활·워드 등: 올리면 400×500px로 바뀌어 4:5 비율로 맞춤, JPG·PNG·GIF. cm 크기 기준이 없어 35×43.75mm로 둠, 사진패스 권장) |
+| [`kr-teps.json`](kr-teps.json) | TEPS (3×4cm, 126×165px, JPG 50KB 이하, 6개월 이내, 무배경) |
 | [`kr-arc.json`](kr-arc.json) | 외국인등록증(ARC)·한국 비자 3.5×4.5cm, 얼굴 길이 2.5~3.5cm, 흰 배경 (출입국·외국인정책본부). 공식 픽셀 기준 없음, 413×531px로 만듦 |
 | [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`). 공식 픽셀·용량 기준은 없음 |
 | [`vn-evisa.json`](vn-evisa.json) | 베트남 전자비자 4×6cm, JPG 2MB 미만, 흰 배경, 안경 금지. 머리 길이·픽셀 기준이 없어 472×709px·1MB 이하로 만듦 |
@@ -28,6 +32,7 @@
 | `id` | 규격 식별자. 파일 이름과 같습니다 |
 | `name` | 화면에 보이는 규격 이름 |
 | `official` | 선택. `false`면 발급 기관 규정이 없고 흔히 쓰는 크기를 담은 관습 규격이며 `source`를 생략할 수 있습니다. 없으면 공식 규격 |
+| `unofficial` | 선택. 공식 원문에 없어 사진패스가 정한 값: `photoMm` 사진 크기, `headMm` 머리 길이, `background` 배경색. 화면에는 '사진패스 권장'으로 적습니다 |
 | `audience` | `adult` 또는 `infant`. 영유아는 입 벌림 점검을 건너뜁니다 |
 | `photoMm` | 사진 크기 `[가로, 세로]` mm |
 | `headMm` | 턱 끝에서 머리 꼭대기까지 길이(mm). `min`·`max`는 규정 범위, `target`은 자르기 목표 |
@@ -36,7 +41,7 @@
 | `background` | 배경 종류와 점검 임계값(`minLuma` 밝기 평균 하한, `maxStd` 표준편차 상한, 0~255) |
 | `expression` | 입 벌림·미소 허용 여부, 눈을 떠야 하는지 |
 | `checks` | 켜고 끄는 자동 점검과 사용자가 직접 확인할 항목(`manual`: `crownLine` 정수리 선, `hairLine` 머리카락 끝 선, `aloneInPhoto` 보호자·사물이 안 보이는지, `glasses` 안경 반사, `noGlasses` 안경을 벗었는지, `lenses` 컬러렌즈·색안경, `takenWithin6Months` 6개월 이내) |
-| `digital` | 온라인 제출 파일 규격: 크기(px)와 허용 범위, 형식, 최대 용량(KB), 해상도(dpi). `unofficial`에 든 값(`px`, `maxKB`)은 공식 원문에 없어 사진패스가 정한 권장값 |
+| `digital` | 온라인 제출 파일 규격: 크기(px)와 허용 범위, 형식, 최대 용량(KB), 해상도(dpi). `unofficial`에 든 값(`px`, `maxKB`)은 공식 원문에 없어 사진패스가 정한 권장값. 선택 `accept`는 제출처가 받는 형식(`jpeg`·`png`·`gif`, 없으면 `format`만). 사진패스가 만드는 파일은 늘 `format`입니다 |
 | `print` | 인화 배치: 인화지 크기(inch, px), 행·열 수, 자르는 선 여부, 선택 `dpi`(없으면 300. 원문이 더 높은 인화 해상도를 요구할 때) |
 | `allowedFixes` | 자동으로 고쳐도 되는 것(선택). `rotate.maxDeg`: 눈 높이 기울기가 이 각도 이하이면 바로 세워 자릅니다. 배경·밝기·피부는 규격과 상관없이 자동으로 고치지 않습니다(배경 단색·밝기는 사용자가 켤 때만 도구가 합니다) |
 | `notes` | 언어별 한 줄 요약 |
