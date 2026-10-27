@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "kr-id",
+  "name": "주민등록증·운전면허증",
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 32, "max": 36, "target": 34 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [413, 531],
+    "wRange": [395, 431],
+    "hRange": [507, 550],
+    "format": "jpeg",
+    "maxKB": 500,
+    "dpi": 300
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "6개월 이내 촬영, 모자 없는 상반신 컬러 사진(주민등록법 시행령 제36조, 도로교통법 시행규칙 제57조). 법령에 머리 길이 기준이 없어 여권 기준(32~36mm)으로 맞춤. 배경은 흰색(2023 행정안전부 국가신분증 표준안)"
+  },
+  "source": "https://www.law.go.kr/법령/주민등록법시행령/제36조",
+  "checkedAt": "2026-10-27"
+}

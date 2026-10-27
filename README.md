@@ -10,6 +10,7 @@
 | --- | --- |
 | [`kr-passport.json`](kr-passport.json) | 대한민국 여권 (성인) |
 | [`kr-passport-infant.json`](kr-passport-infant.json) | 대한민국 여권 (36개월 이하 영유아: 입을 조금 벌려도 됨) |
+| [`kr-id.json`](kr-id.json) | 주민등록증·운전면허증 (3.5×4.5cm. 법령에 머리 길이 기준이 없어 여권 기준으로 맞춤) |
 
 ## 필드
 
