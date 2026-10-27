@@ -9,6 +9,7 @@
 | 파일 | 규격 |
 | --- | --- |
 | [`kr-passport.json`](kr-passport.json) | 대한민국 여권 (성인) |
+| [`kr-passport-infant.json`](kr-passport-infant.json) | 대한민국 여권 (36개월 이하 영유아: 입을 조금 벌려도 됨) |
 
 ## 필드
 
@@ -23,7 +24,7 @@
 | `topMarginMm` | 정수리에서 사진 위 가장자리까지(mm). 규정에 수치가 없어 예시 사진을 재서 정한 값 |
 | `background` | 배경 종류와 점검 임계값(`minLuma` 밝기 평균 하한, `maxStd` 표준편차 상한, 0~255) |
 | `expression` | 입 벌림·미소 허용 여부, 눈을 떠야 하는지 |
-| `checks` | 켜고 끄는 자동 점검과 사용자가 직접 확인할 항목(`manual`) |
+| `checks` | 켜고 끄는 자동 점검과 사용자가 직접 확인할 항목(`manual`: `crownLine` 정수리 선, `aloneInPhoto` 보호자·사물이 안 보이는지, `glasses` 안경 반사, `lenses` 컬러렌즈·색안경, `takenWithin6Months` 6개월 이내) |
 | `digital` | 온라인 제출 파일 규격: 크기(px)와 허용 범위, 형식, 최대 용량(KB), 해상도(dpi) |
 | `print` | 인화 배치: 인화지 크기(inch, px), 행·열 수, 자르는 선 여부 |
 | `allowedFixes` | 자동으로 고쳐도 되는 것(선택). `rotate.maxDeg`: 눈 높이 기울기가 이 각도 이하이면 바로 세워 자릅니다. 배경·밝기·피부는 규격과 상관없이 자동으로 고치지 않습니다(배경 단색·밝기는 사용자가 켤 때만 도구가 합니다) |

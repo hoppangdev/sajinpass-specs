@@ -176,6 +176,7 @@
           "items": {
             "enum": [
               "crownLine",
+              "aloneInPhoto",
               "glasses",
               "lenses",
               "takenWithin6Months"
