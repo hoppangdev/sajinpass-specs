@@ -15,6 +15,7 @@
 | [`kr-resume-3x4.json`](kr-resume-3x4.json) | 반명함판 3×4cm (이력서). 공식 규정이 없는 관습 크기(`official: false`) |
 | [`kr-suneung.json`](kr-suneung.json) | 수능 응시원서 (여권용 규격 3.5×4.5cm, 머리 길이 3.2~3.6cm. 온라인 사전입력 JPG 500KB 이하·413×531px 권장) |
 | [`kr-toeic.json`](kr-toeic.json) | 토익 접수 (얼굴 길이 3.2~3.6cm·흰 배경, JPG 500KB 이하. 최신 안내에 픽셀 기준이 없어 여권 규격 413×531px로 만듦) |
+| [`kr-arc.json`](kr-arc.json) | 외국인등록증(ARC)·한국 비자 3.5×4.5cm, 얼굴 길이 2.5~3.5cm, 흰 배경 (출입국·외국인정책본부). 공식 픽셀 기준 없음, 413×531px로 만듦 |
 | [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`) |
 | [`vn-evisa.json`](vn-evisa.json) | 베트남 전자비자 4×6cm, JPG 2MB 미만, 흰 배경, 안경 금지. 머리 길이·픽셀 기준이 없어 472×709px·1MB 이하로 만듦 |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
