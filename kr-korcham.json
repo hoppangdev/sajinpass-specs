@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kr-korcham",
   "name": "대한상공회의소 자격시험 (컴활·워드 등)",
-  "unofficial": ["photoMm", "headMm"],
+  "unofficial": ["photoMm", "headMm", "background"],
   "audience": "adult",
   "photoMm": [35, 43.75],
   "headMm": { "min": 31, "max": 35, "target": 33 },
@@ -33,7 +33,7 @@
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
   "notes": {
-    "ko": "대한상공회의소 자격평가사업단: 반명함판·여권사진 형태의 컬러 사진, 얼굴 정면, 선글라스·모자 없이. 스냅·스티커·측면·전신·캠 사진, 배경이 있는 사진, 사람이 작은 사진은 안 됨. 올린 사진은 400×500픽셀로 바뀌므로 1:1.25(4:5) 비율로 맞춰야 이상하게 보이지 않음. JPG·JPEG·PNG·GIF. 한 번 올리면 계속 쓰고, 바꾸려면 관리자 승인이 필요함. cm 크기·머리 길이·용량은 원문에 없어 여권 가로(35mm)와 같은 4:5(35×43.75mm)에 여권과 같은 비율의 머리 길이(31~35mm)로 맞추고 500KB 이하로 만듦(사진패스 권장). 사진 비율만 맞으면 픽셀은 바뀌므로 허용 px 범위는 넉넉히 잡음"
+    "ko": "대한상공회의소 자격평가사업단: 반명함판·여권사진 형태의 컬러 사진, 얼굴 정면, 선글라스·모자 없이. 스냅·스티커·측면·전신·캠 사진, 배경이 있는 사진, 사람이 작은 사진은 안 됨. 올린 사진은 400×500픽셀로 바뀌므로 1:1.25(4:5) 비율로 맞춰야 이상하게 보이지 않음. JPG·JPEG·PNG·GIF. 한 번 올리면 계속 쓰고, 바꾸려면 관리자 승인이 필요함. cm 크기·머리 길이·배경색·용량은 원문에 없어 여권 가로(35mm)와 같은 4:5(35×43.75mm)에 여권과 같은 비율의 머리 길이(31~35mm), 밝은 단색 배경으로 맞추고 500KB 이하로 만듦(사진패스 권장). 사진 비율만 맞으면 픽셀은 바뀌므로 허용 px 범위는 넉넉히 잡음"
   },
   "source": "https://license.korcham.net/ex/examInfo1.do",
   "sourceDigital": "https://license.korcham.net/customer/guideDetail.do?no=194&pg=1&cd=10",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "kr-teps",
   "name": "TEPS",
-  "unofficial": ["headMm"],
+  "unofficial": ["photoMm", "headMm", "background"],
   "audience": "adult",
   "photoMm": [30, 39.2],
   "headMm": { "min": 27, "max": 31, "target": 29 },
@@ -31,7 +31,7 @@
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
   "notes": {
-    "ko": "TEPS 자주 묻는 질문(사진관련): 6개월 이내 촬영한 반명함판 컬러 사진(탈모, 무배경), 3×4cm(126×165픽셀), 50KB 이하 JPG만. 흑백 사진·배경이 있는 사진·스냅 사진은 안 되고, 사진 칸에 여백이 있거나 깨져 보이면 다시 올려야 함. 원문의 3×4cm와 126×165픽셀은 비율이 조금 달라 파일 비율에 맞춰 세로를 39.2mm로 둠. 머리 길이는 원문에 없어 반명함 비율(27~31mm)로 맞춤(사진패스 권장)"
+    "ko": "TEPS 자주 묻는 질문(사진관련): 6개월 이내 촬영한 반명함판 컬러 사진(탈모, 무배경), 3×4cm(126×165픽셀), 50KB 이하 JPG만. 흑백 사진·배경이 있는 사진·스냅 사진은 안 되고, 사진 칸에 여백이 있거나 깨져 보이면 다시 올려야 함. 원문의 3×4cm와 126×165픽셀은 비율이 조금 달라 파일 비율에 맞춰 세로를 39.2mm로 둠(사진패스 권장). 머리 길이·배경색은 원문에 없어 반명함 비율(27~31mm)과 밝은 단색 배경으로 맞춤(사진패스 권장)"
   },
   "source": "https://www.teps.or.kr/Etc2/FaqList",
   "checkedAt": "2026-10-28"
