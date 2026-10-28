@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "id": "kr-id",
   "name": "주민등록증·운전면허증",
+  "unofficial": ["headMm"],
   "audience": "adult",
   "photoMm": [35, 45],
   "headMm": { "min": 32, "max": 36, "target": 34 },

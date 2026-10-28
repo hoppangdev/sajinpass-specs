@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "id": "vn-evisa",
   "name": "베트남 전자비자 (e-visa)",
+  "unofficial": ["headMm"],
   "audience": "adult",
   "photoMm": [40, 60],
   "headMm": { "min": 34, "max": 46, "target": 40 },
