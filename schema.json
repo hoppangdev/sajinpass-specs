@@ -100,6 +100,10 @@
       "type": "number",
       "minimum": 0
     },
+    "faceWidthMm": {
+      "description": "종이 사진의 얼굴 폭(양 볼 바깥선 사이, mm). 원문에 있는 규격만 둔다. 자를 때 이 안에 들게 머리 길이를 고르고 얼굴 배치 점검이 본다.",
+      "$ref": "#/$defs/positivePair"
+    },
     "background": {
       "description": "배경 점검 기준. 밝기는 0~255.",
       "type": "object",
@@ -270,14 +274,15 @@
           "exclusiveMinimum": 0
         },
         "layout": {
-          "description": "제출처가 파일 픽셀로 정한 얼굴 배치. refPx 크기 파일 기준이고 다른 크기면 가로 비율로 늘린다. faceWidthPx는 얼굴 폭 범위, eyeFromBottomMinPx는 파일 아래 끝에서 눈 가운데 선까지의 최소 거리, eyeDistanceMinPx는 두 눈 사이 최소 거리.",
+          "description": "제출처가 파일 픽셀로 정한 얼굴 배치. refPx 크기 파일 기준이고 다른 크기면 가로 비율로 늘린다. faceWidthPx는 얼굴 폭 범위, eyeFromBottomMinPx는 파일 아래 끝에서 눈 가운데 선까지의 최소 거리, eyeDistanceMinPx는 두 눈 사이 최소 거리, crownFromTopPx는 파일 위 끝에서 머리 꼭대기(headTop)까지의 거리 범위.",
           "type": "object",
           "additionalProperties": false,
           "required": [
             "refPx",
             "faceWidthPx",
             "eyeFromBottomMinPx",
-            "eyeDistanceMinPx"
+            "eyeDistanceMinPx",
+            "crownFromTopPx"
           ],
           "properties": {
             "refPx": {
@@ -293,6 +298,9 @@
             "eyeDistanceMinPx": {
               "type": "number",
               "exclusiveMinimum": 0
+            },
+            "crownFromTopPx": {
+              "$ref": "#/$defs/positivePair"
             }
           }
         },
