@@ -28,7 +28,8 @@
     "maxKB": 300,
     "minKB": 10,
     "dpi": 300,
-    "unofficial": ["px", "maxKB"]
+    "officialMaxKB": 1000,
+    "unofficial": ["px", "range", "maxKB"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 2, "rows": 1, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },

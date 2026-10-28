@@ -28,7 +28,8 @@
     "accept": ["jpeg", "png"],
     "maxKB": 500,
     "dpi": 300,
-    "unofficial": ["px", "maxKB"]
+    "officialMinPx": [276, 354],
+    "unofficial": ["px", "range", "maxKB"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },

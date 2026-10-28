@@ -27,7 +27,8 @@
     "maxKB": 240,
     "minKB": 60,
     "dpi": 600,
-    "unofficial": ["px", "maxKB", "dpi"]
+    "officialMinPx": [420, 540],
+    "unofficial": ["px", "range", "maxKB", "dpi"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "notes": {

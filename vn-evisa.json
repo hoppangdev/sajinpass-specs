@@ -27,7 +27,8 @@
     "format": "jpeg",
     "maxKB": 1000,
     "dpi": 300,
-    "unofficial": ["px", "maxKB"]
+    "officialMaxKB": 2000,
+    "unofficial": ["px", "range", "maxKB"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 3, "rows": 1, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
