@@ -275,7 +275,7 @@
         },
         "officialMinPx": {
           "description": "허용 범위(wRange·hRange)가 사진패스가 정한 값(unofficial의 range)이어도 원문에 있는 최소 픽셀 [가로, 세로]. 파일 검사기가 이보다 작으면 실패로 본다.",
-          "$ref": "#/$defs/positivePair"
+          "$ref": "#/$defs/positiveIntPair"
         },
         "officialMaxKB": {
           "description": "용량 상한(maxKB)이 사진패스가 정한 값(unofficial의 maxKB)이어도 원문에 있는 더 넉넉한 용량 상한(KB). 파일 검사기가 이보다 크면 실패로 본다.",
