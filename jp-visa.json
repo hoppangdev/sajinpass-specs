@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "jp-visa",
+  "name": "일본 비자 (워킹홀리데이·유학·취업)",
+  "unofficial": ["headMm", "background"],
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 32, "max": 36, "target": 34 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [413, 531],
+    "wRange": [350, 2000],
+    "hRange": [450, 2600],
+    "format": "jpeg",
+    "maxKB": 500,
+    "dpi": 300,
+    "unofficial": ["px", "maxKB"]
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "주한일본대사관 비자 안내: 장기 체재 비자는 가로 3.5cm×세로 4.5cm 사진 1매, 신청 당일 기준 6개월 이내 촬영, 스냅 사진 불가. 워킹홀리데이 사증신청서 사진은 대강 가로 3.5cm×세로 4.5cm, 무배경, 6개월 이내. 일본 외무성 비자 신청서 사진 칸은 45mm×35mm(세로×가로). JAPAN eVISA(한국 거주 외국인 중 단기 비자가 필요한 사람만) 사진은 6개월 이내, 무늬 없는 배경, JPG·PNG·GIF·BMP·HEIC, 2MB 이하 권장. 머리 길이·배경색·픽셀 기준은 원문에 없어 여권과 같은 머리 32~36mm(목표 34mm), 밝은 단색 배경, 413×531px(300dpi)·500KB 이하로 만듦(사진패스 권장). 허용 px 범위는 공식 기준이 없어 넉넉히 잡음",
+    "en": "Embassy of Japan in Korea visa guide: one 3.5x4.5 cm (WxH) photo taken within 6 months of the application for long-term visas, no snapshots; the working holiday form takes a roughly 3.5x4.5 cm photo with a plain background taken within 6 months. The MOFA visa form photo box is 45x35 mm (HxW). JAPAN eVISA (only for foreign residents of Korea who need a short-term visa) takes a photo within 6 months on a plain background as JPG, PNG, GIF, BMP or HEIC, up to 2 MB recommended. No head size, background colour or pixel rule, so the head is 32-36 mm (aim 34 mm) like the Korean passport, the background plain and light, and the file 413x531 px (300 dpi) under 500 KB (our choice)"
+  },
+  "source": "https://www.kr.emb-japan.go.jp/itpr_ko/visa_zairyu.html",
+  "sourceDigital": "https://www.evisa.mofa.go.jp/personal/faq",
+  "checkedAt": "2026-10-28"
+}
