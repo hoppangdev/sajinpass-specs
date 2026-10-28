@@ -260,6 +260,15 @@
           "type": "integer",
           "exclusiveMinimum": 0
         },
+        "frameMm": {
+          "description": "파일이 담는 범위 [가로, 세로] mm. 파일 비율이 종이 사진(photoMm)과 다른 규격만 둔다. 높이는 photoMm과 같고 가로는 같거나 넓다. 인화는 가운데를 photoMm 비율로 잘라 쓴다.",
+          "$ref": "#/$defs/positivePair"
+        },
+        "minKB": {
+          "description": "제출처가 정한 최소 용량(KB). 없으면 하한이 없다. maxKB보다 작다.",
+          "type": "integer",
+          "exclusiveMinimum": 0
+        },
         "dpi": {
           "type": "integer",
           "exclusiveMinimum": 0

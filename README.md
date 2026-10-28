@@ -22,6 +22,7 @@
 | [`kr-arc.json`](kr-arc.json) | 외국인등록증(ARC)·한국 비자 3.5×4.5cm, 얼굴 길이 2.5~3.5cm, 흰 배경 (출입국·외국인정책본부). 공식 픽셀 기준 없음, 413×531px로 만듦 |
 | [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`). 공식 픽셀·용량 기준은 없음 |
 | [`vn-evisa.json`](vn-evisa.json) | 베트남 전자비자 4×6cm, JPG 2MB 미만, 흰 배경, 안경 금지. 머리 길이·픽셀 기준이 없어 472×709px·1MB 이하로 만듦 |
+| [`cn-visa.json`](cn-visa.json) | 중국 비자 종이 33×48mm, 머리 28~33mm, 흰 배경. 온라인 파일 354×472~420×560px(3:4)·40~120KB JPEG(`minKB`)라 종이 사진과 비율이 달라 `frameMm` 36×48mm로 자르고 420×560px로 만듦 (중국 외교부 영사국 규격, 주한중국대사관 게시) |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
 
 ## 필드
@@ -41,7 +42,7 @@
 | `background` | 배경 종류와 점검 임계값(`minLuma` 밝기 평균 하한, `maxStd` 표준편차 상한, 0~255) |
 | `expression` | 입 벌림·미소 허용 여부, 눈을 떠야 하는지 |
 | `checks` | 켜고 끄는 자동 점검과 사용자가 직접 확인할 항목(`manual`: `crownLine` 정수리 선, `hairLine` 머리카락 끝 선, `aloneInPhoto` 보호자·사물이 안 보이는지, `glasses` 안경 반사, `noGlasses` 안경을 벗었는지, `lenses` 컬러렌즈·색안경, `takenWithin6Months` 6개월 이내) |
-| `digital` | 온라인 제출 파일 규격: 크기(px)와 허용 범위, 형식, 최대 용량(KB), 해상도(dpi). `unofficial`에 든 값(`px`, `maxKB`)은 공식 원문에 없어 사진패스가 정한 권장값. 선택 `accept`는 제출처가 받는 형식(`jpeg`·`png`·`gif`, 없으면 `format`만). 사진패스가 만드는 파일은 늘 `format`입니다 |
+| `digital` | 온라인 제출 파일 규격: 크기(px)와 허용 범위, 형식, 최대 용량(KB), 해상도(dpi). `unofficial`에 든 값(`px`, `maxKB`)은 공식 원문에 없어 사진패스가 정한 권장값. 선택 `accept`는 제출처가 받는 형식(`jpeg`·`png`·`gif`, 없으면 `format`만). 사진패스가 만드는 파일은 늘 `format`입니다. 선택 `minKB`는 제출처가 정한 최소 용량(KB), 선택 `frameMm`은 파일 비율이 종이 사진과 다를 때 파일이 담는 범위 `[가로, 세로]` mm(높이는 `photoMm`과 같고 가로는 같거나 넓음. 인화는 가운데를 `photoMm` 비율로 잘라 씀) |
 | `print` | 인화 배치: 인화지 크기(inch, px), 행·열 수, 자르는 선 여부, 선택 `dpi`(없으면 300. 원문이 더 높은 인화 해상도를 요구할 때) |
 | `allowedFixes` | 자동으로 고쳐도 되는 것(선택). `rotate.maxDeg`: 눈 높이 기울기가 이 각도 이하이면 바로 세워 자릅니다. 배경·밝기·피부는 규격과 상관없이 자동으로 고치지 않습니다(배경 단색·밝기는 사용자가 켤 때만 도구가 합니다) |
 | `notes` | 언어별 한 줄 요약 |
