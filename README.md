@@ -27,6 +27,8 @@
 | [`cn-visa.json`](cn-visa.json) | 중국 비자 종이 33×48mm, 머리 28~33mm, 흰 배경. 온라인 파일 354×472~420×560px(3:4)·40~120KB JPEG(`minKB`)라 종이 사진과 비율이 달라 `frameMm` 36×48mm로 자르고, 원문이 얼굴 배치를 픽셀로 정한 354×472px로 만듦. 얼굴 폭 191~219px(그림은 191~251px, 본문을 따름)·눈 위치·정수리 위 10~70px(`digital.layout`), 종이 얼굴 폭 15~22mm(`faceWidthMm`), 허용 각도(`poseMaxDeg`)를 따로 둠, 300dpi는 사진패스가 정한 값 (중국 외교부 영사국 규격, 주한중국대사관 게시) |
 | [`in-visa.json`](in-visa.json) | 인도 비자 (e-Visa) 정사각형 JPEG(e-Visa 10KB~1MB, 일반 비자 10~300KB·350~1000px), 머리카락 끝~턱 25~35mm, 흰 배경, 안경 금지. 종이 사진은 2×2인치(주한 인도 비자센터). e-Visa에 픽셀 기준이 없어 600×600px(`digital.unofficial`)·10~300KB(`minKB`)로 만듦 |
 | [`jp-visa.json`](jp-visa.json) | 일본 비자 (워킹홀리데이·유학·취업) 3.5×4.5cm, 6개월 이내, 무배경 (주한일본대사관). 머리 길이·배경색 기준이 없어 여권과 같은 32~36mm·밝은 단색(`unofficial`), 파일은 413×531px·500KB 이하(사진패스 권장) |
+| [`ca-visa.json`](ca-visa.json) | 캐나다 비자·워킹홀리데이(IEC) 35×45mm 이상, 턱~정수리 31~36mm, 흰색·밝은 단색 배경, 보정 금지. IEC 디지털 사진 420×540px 이상·이상적으로 240KB·60KB 이상(`minKB`). 파일은 827×1063px(600dpi)·240KB 이하(`digital.unofficial`), 기울기 자동 보정 없음 |
+| [`au-visa.json`](au-visa.json) | 호주 비자 JPEG 70KB~3.5MB(`minKB`), 1200×1600px 권장, 무채색·연한 회색 배경, 보정 금지. 종이 35~40×45~50mm·턱~정수리 32~36mm(시민권 사진 안내)라 3:4 파일과 같은 비율인 36×48mm(`unofficial`)로 자름, 기울기 자동 보정 없음 |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
 
 ## 필드

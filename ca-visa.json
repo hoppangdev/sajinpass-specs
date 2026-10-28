@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "ca-visa",
+  "name": "캐나다 비자·워킹홀리데이 (IEC)",
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 31, "max": 36, "target": 34 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [827, 1063],
+    "wRange": [420, 2400],
+    "hRange": [540, 3100],
+    "format": "jpeg",
+    "maxKB": 240,
+    "minKB": 60,
+    "dpi": 600,
+    "unofficial": ["px", "maxKB"]
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "notes": {
+    "ko": "캐나다 이민부(IRCC) 임시 거주 비자 사진 안내(종이 신청): 같은 사진 2장, 35×45mm 이상, 턱에서 정수리까지 31~36mm, 흰색이나 밝은 단색 배경, 6개월 이내, 디지털 사진은 어떤 보정도 하면 안 됨, 무색 처방 안경 가능·선글라스 불가. IEC(워킹홀리데이 등) 워크퍼밋 디지털 사진: 35×45mm 이상, 31~36mm, 420×540px 이상, 스캔은 600ppi 이상, JPEG·JPEG2000, 이상적으로 240KB·60KB 이상, 24비트 RGB 컬러. 파일은 3.5×4.5cm를 600dpi로 바꾼 827×1063px, 240KB 이하(사진패스 권장)로 만듦. 보정 금지라 기울기 자동 보정(allowedFixes)을 두지 않음",
+    "en": "IRCC temporary resident visa photo specifications (paper): two identical photos, at least 35x45 mm, chin to crown 31-36 mm, plain white or light-coloured background, taken within 6 months, digital photos must not be altered in any way, non-tinted prescription glasses allowed, no sunglasses. IEC work permit digital photo: at least 35x45 mm, 31-36 mm, at least 420x540 px, scans at least 600 ppi, JPEG or JPEG2000, ideally 240 kB and not less than 60 kB, 24-bit RGB colour. The file is 827x1063 px (35x45 mm at 600 dpi) under 240 kB (our choice). No automatic straightening, since photos must not be altered"
+  },
+  "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/temporary-resident-visa-application-photograph-specifications.html",
+  "sourceDigital": "https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/apply-work-permit.html",
+  "checkedAt": "2026-10-29"
+}
