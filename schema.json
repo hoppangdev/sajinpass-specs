@@ -273,6 +273,15 @@
           "type": "integer",
           "exclusiveMinimum": 0
         },
+        "officialMinPx": {
+          "description": "허용 범위(wRange·hRange)가 사진패스가 정한 값(unofficial의 range)이어도 원문에 있는 최소 픽셀 [가로, 세로]. 파일 검사기가 이보다 작으면 실패로 본다.",
+          "$ref": "#/$defs/positivePair"
+        },
+        "officialMaxKB": {
+          "description": "용량 상한(maxKB)이 사진패스가 정한 값(unofficial의 maxKB)이어도 원문에 있는 더 넉넉한 용량 상한(KB). 파일 검사기가 이보다 크면 실패로 본다.",
+          "type": "integer",
+          "exclusiveMinimum": 0
+        },
         "layout": {
           "description": "제출처가 파일 픽셀로 정한 얼굴 배치. refPx 크기 파일 기준이고 다른 크기면 가로 비율로 늘린다. faceWidthPx는 얼굴 폭 범위, eyeFromBottomMinPx는 파일 아래 끝에서 눈 가운데 선까지의 최소 거리, eyeDistanceMinPx는 두 눈 사이 최소 거리, crownFromTopPx는 파일 위 끝에서 머리 꼭대기(headTop)까지의 거리 범위.",
           "type": "object",
@@ -309,7 +318,7 @@
           "exclusiveMinimum": 0
         },
         "unofficial": {
-          "description": "공식 원문에 없어 사진패스가 정한 값. px는 만드는 크기, range는 허용 범위(wRange·hRange. 파일 검사기가 벗어나도 실패 대신 주의로 본다), maxKB는 용량 상한(넘어도 주의로 본다), dpi는 파일에 적는 해상도(파일 검사기가 점검하지 않는다). 없으면 모두 원문 값이다. 화면에는 '사진패스 권장'으로 표시한다.",
+          "description": "공식 원문에 없어 사진패스가 정한 값. px는 만드는 크기, range는 허용 범위(wRange·hRange. 파일 검사기가 벗어나도 officialMinPx보다 작지 않으면 주의로 본다), maxKB는 용량 상한(넘어도 officialMaxKB 이하면 주의로 본다), dpi는 파일에 적는 해상도(파일 검사기가 점검하지 않는다). 없으면 모두 원문 값이다. 화면에는 '사진패스 권장'으로 표시한다.",
           "type": "array",
           "items": {
             "enum": [
