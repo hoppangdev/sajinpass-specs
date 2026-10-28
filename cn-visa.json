@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "cn-visa",
+  "name": "중국 비자",
+  "audience": "adult",
+  "photoMm": [33, 48],
+  "headMm": { "min": 28, "max": 33, "target": 31.5 },
+  "headTop": "hair",
+  "topMarginMm": 4,
+  "faceWidthMm": [15, 22],
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["hairLine", "glasses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [354, 472],
+    "frameMm": [36, 48],
+    "wRange": [354, 420],
+    "hRange": [472, 560],
+    "format": "jpeg",
+    "maxKB": 120,
+    "minKB": 40,
+    "layout": { "refPx": [354, 472], "faceWidthPx": [191, 219], "eyeFromBottomMinPx": 256, "eyeDistanceMinPx": 60, "crownFromTopPx": [10, 70] },
+    "dpi": 300,
+    "unofficial": ["dpi"]
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 1, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "poseMaxDeg": { "roll": 20, "yaw": 20, "pitch": 25 },
+  "notes": {
+    "ko": "중국 외교부 영사국 '중국 비자 신청 사진 규격'(주한중국대사관 게시): 종이 사진 33×48mm, 턱~정수리 28~33mm, 정수리 위 3~5mm(그림의 표시선은 머리카락 윤곽 맨 위, 부푼 머리카락은 잘려도 됨), 얼굴 폭 15~22mm, 흰색 또는 흰색에 가까운 배경, 테두리 없음, 6개월 이내. 온라인 신청서에 올리는 파일은 354×472~420×560px, RGB 24비트 JPEG, 40~120KB이고, 354×472px 기준으로 얼굴 폭 205±14px(191~219px, 그림은 191~251px), 위 끝~정수리 10~70px(그림은 10~85px), 아래 끝~두 눈 가운데 선 256px 초과, 두 눈 사이 60px 초과, 고개는 좌우·기울기 20°·위아래 25° 이내. 사진패스는 354×472px로 만들고 그림보다 좁은 본문 값을 따라, 얼굴 폭이 이 범위와 종이 15~22mm에 들고 두 눈 사이가 60px를 넘게 머리 길이를 28~33mm 안에서 고름(300dpi는 사진패스가 정한 값). 안경은 무색 렌즈에 빛 반사·그림자가 없고 테가 눈을 가리지 않을 때만, 종교 목적이 아니면 모자 불가, 귀가 보이게. 파일은 3:4 비율이라 종이 사진(33×48mm)보다 양옆이 조금 넓고, 인화는 가운데를 33×48mm로 잘라 씀",
+    "en": "Photo Requirements for Chinese Visa Application (Department of Consular Affairs, MFA, posted by the Chinese Embassy in Korea): paper photo 33x48 mm, chin to crown 28-33 mm, 3-5 mm above the crown (the diagram marks the top of the hair outline; voluminous hair may be cropped), face width 15-22 mm, white or near-white background, no border, taken within 6 months. The online form takes a 354x472 to 420x560 px RGB 24-bit JPEG of 40-120 KB; at 354x472 px the face is 205±14 px wide (191-219 px; the diagram says 191-251 px), the crown is 10-70 px below the top (the diagram says 10-85 px), the eye line is more than 256 px above the bottom, the eyes are more than 60 px apart, and the head is within 20° left/right and tilt and 25° up/down. Sajinpass makes 354x472 px, follows the text rather than the wider diagram values, and picks a head length within 28-33 mm that puts the face width in that range and within 15-22 mm on paper with the eyes more than 60 px apart (300 dpi is our choice). Glasses only with clear lenses and no glare, shadow or frame over the eyes, no hat except for religious reasons, ears visible. The file is 3:4, slightly wider than the 33x48 mm paper photo; the print uses the centre cropped to 33x48 mm"
+  },
+  "source": "https://kr.china-embassy.gov.cn/kor/lsfw/lszj/202303/t20230331_11052404.htm",
+  "checkedAt": "2026-10-28"
+}
