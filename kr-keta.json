@@ -18,12 +18,12 @@
     "expression": true,
     "background": true,
     "shadow": true,
-    "manual": ["crownLine", "lenses"]
+    "manual": ["crownLine", "glasses"]
   },
   "digital": {
     "px": [413, 531],
-    "wRange": [350, 2000],
-    "hRange": [450, 2600],
+    "wRange": [395, 431],
+    "hRange": [507, 550],
     "format": "jpeg",
     "maxKB": 500,
     "dpi": 300,
