@@ -20,9 +20,12 @@
 | [`kr-korcham.json`](kr-korcham.json) | 대한상공회의소 자격시험 (컴활·워드 등: 올리면 400×500px로 바뀌어 4:5 비율로 맞춤, JPG·PNG·GIF. cm 크기 기준이 없어 35×43.75mm로 둠, 사진패스 권장) |
 | [`kr-teps.json`](kr-teps.json) | TEPS (3×4cm, 126×165px, JPG 50KB 이하, 6개월 이내, 무배경) |
 | [`kr-arc.json`](kr-arc.json) | 외국인등록증(ARC)·한국 비자 3.5×4.5cm, 얼굴 길이 2.5~3.5cm, 흰 배경 (출입국·외국인정책본부). 공식 픽셀 기준 없음, 413×531px로 만듦 |
+| [`kr-keta.json`](kr-keta.json) | K-ETA (전자여행허가) 컬러 JPG 20MB 이하, 얼굴 전체 정면이 이미지의 75%, 모자·스카프·선글라스 없이 (K-ETA 자주 묻는 질문). 크기·픽셀·배경 기준이 없어 3.5×4.5cm 비율·머리 34mm·밝은 단색·413×531px·500KB 이하로 만듦(`unofficial`) |
 | [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`). 공식 픽셀·용량 기준은 없음 |
 | [`vn-evisa.json`](vn-evisa.json) | 베트남 전자비자 4×6cm, JPG 2MB 미만, 흰 배경, 안경 금지. 머리 길이·픽셀 기준이 없어 472×709px·1MB 이하로 만듦 |
 | [`cn-visa.json`](cn-visa.json) | 중국 비자 종이 33×48mm, 머리 28~33mm, 흰 배경. 온라인 파일 354×472~420×560px(3:4)·40~120KB JPEG(`minKB`)라 종이 사진과 비율이 달라 `frameMm` 36×48mm로 자르고, 원문이 얼굴 배치를 픽셀로 정한 354×472px로 만듦. 얼굴 폭 191~219px(그림은 191~251px, 본문을 따름)·눈 위치·정수리 위 10~70px(`digital.layout`), 종이 얼굴 폭 15~22mm(`faceWidthMm`), 허용 각도(`poseMaxDeg`)를 따로 둠, 300dpi는 사진패스가 정한 값 (중국 외교부 영사국 규격, 주한중국대사관 게시) |
+| [`in-visa.json`](in-visa.json) | 인도 비자 (e-Visa) 정사각형 JPEG(e-Visa 10KB~1MB, 일반 비자 10~300KB·350~1000px), 머리카락 끝~턱 25~35mm, 흰 배경, 안경 금지. 종이 사진은 2×2인치(주한 인도 비자센터). e-Visa에 픽셀 기준이 없어 600×600px(`digital.unofficial`)·10~300KB(`minKB`)로 만듦 |
+| [`jp-visa.json`](jp-visa.json) | 일본 비자 (워킹홀리데이·유학·취업) 3.5×4.5cm, 6개월 이내, 무배경 (주한일본대사관). 머리 길이·배경색 기준이 없어 여권과 같은 32~36mm·밝은 단색(`unofficial`), 파일은 413×531px·500KB 이하(사진패스 권장) |
 | [`us-visa.json`](us-visa.json) | 미국 비자 (DS-160) 2×2인치 정사각형. 머리 길이는 머리카락 끝부터 잼(`headTop: "hair"`), 안경 금지 |
 
 ## 필드
