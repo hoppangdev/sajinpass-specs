@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "kr-topik",
+  "name": "TOPIK (한국어능력시험)",
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 25, "max": 35, "target": 32 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "white", "minLuma": 215, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
+  },
+  "digital": {
+    "px": [413, 531],
+    "wRange": [395, 431],
+    "hRange": [507, 550],
+    "format": "jpeg",
+    "maxKB": 200,
+    "dpi": 300,
+    "unofficial": ["px"]
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
+  "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "notes": {
+    "ko": "TOPIK 자주 묻는 질문 '사진 규격 안내': 법무부 <외국인등록용 사진 규격>을 준용(가로 3.5cm × 세로 4.5cm, 얼굴 길이 2.5~3.5cm, 6개월 이내 흰색 바탕 정면 얼굴 사진), 200KB 이내 jpg·jpeg만 등록, 사진은 수험표와 성적증명서에 나옴. 규격에 맞지 않거나 시험 날 얼굴이 사진과 다르면 응시 불가·성적 무효가 될 수 있음. 공식 픽셀 기준 없음, 외국인등록증과 같은 413×531px로 만듦",
+    "en": "TOPIK FAQ 'photo size': follows the Ministry of Justice foreigner registration photo rules (3.5x4.5 cm, face length 2.5-3.5 cm, front view on a white background, taken within 6 months), JPG/JPEG up to 200 KB, and the photo appears on the admission ticket and score report. No official pixel size, so the file is 413x531 px like the ARC photo"
+  },
+  "source": "https://www.topik.go.kr/TWINFO/TWINFO0030.do",
+  "checkedAt": "2026-10-29"
+}

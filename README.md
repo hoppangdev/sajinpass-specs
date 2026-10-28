@@ -19,6 +19,7 @@
 | [`kr-history-exam.json`](kr-history-exam.json) | 한국사능력검정시험 (GIF·JPG, 권장 크기 120×160px, 약 3×4cm. 용량 기준이 없어 200KB 이하로 만듦) |
 | [`kr-korcham.json`](kr-korcham.json) | 대한상공회의소 자격시험 (컴활·워드 등: 올리면 400×500px로 바뀌어 4:5 비율로 맞춤, JPG·PNG·GIF. cm 크기 기준이 없어 35×43.75mm로 둠, 사진패스 권장) |
 | [`kr-teps.json`](kr-teps.json) | TEPS (3×4cm, 126×165px, JPG 50KB 이하, 6개월 이내, 무배경) |
+| [`kr-topik.json`](kr-topik.json) | TOPIK (한국어능력시험) 3.5×4.5cm, 얼굴 길이 2.5~3.5cm, 흰 배경, JPG 200KB 이내 (법무부 외국인등록용 사진 규격 준용, TOPIK 자주 묻는 질문). 공식 픽셀 기준 없음, 413×531px로 만듦 |
 | [`kr-arc.json`](kr-arc.json) | 외국인등록증(ARC)·한국 비자 3.5×4.5cm, 얼굴 길이 2.5~3.5cm, 흰 배경 (출입국·외국인정책본부). 공식 픽셀 기준 없음, 413×531px로 만듦 |
 | [`kr-keta.json`](kr-keta.json) | K-ETA (전자여행허가) 컬러 JPG 20MB 이하, 얼굴 전체 정면이 이미지의 75%, 모자·스카프·선글라스 없이 (K-ETA 자주 묻는 질문). 크기·픽셀·배경 기준이 없어 3.5×4.5cm 비율·머리 34mm·밝은 단색·413×531px·500KB 이하로 만듦(`unofficial`) |
 | [`eu-schengen.json`](eu-schengen.json) | 유럽 쉥겐 비자 (독일·프랑스 등) 3.5×4.5cm, 얼굴 32~36mm, 밝은 단색 배경. 독일 안내의 인화 600dpi 이상에 맞춰 인화지·파일 모두 600dpi(827×1063px, `print.dpi`). 공식 픽셀·용량 기준은 없음 |
