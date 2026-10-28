@@ -32,7 +32,7 @@
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
   "notes": {
-    "ko": "K-ETA 공식 사이트 자주 묻는 질문: 여권 사진과 같을 필요는 없고 컬러, JPG, 20MB 이하, 모자·스카프·선글라스 같은 액세서리 없이, 화려한 무늬 옷은 피하기를 권장, 얼굴 전체가 정면으로 이미지의 75%, 눈을 뜨고 카메라를 정면으로. 종교적인 이유의 히잡 등은 얼굴 전체(이마부터 턱까지)가 보이면 됨. 모바일 앱은 크기·용량을 자동 조정. 사진 크기·픽셀·배경색 기준은 없어 여권과 같은 3.5×4.5cm 비율에 머리를 사진 높이의 약 75%(32~36mm, 목표 34mm)로, 밝은 단색 배경, 413×531px(300dpi)·500KB 이하로 만듦(사진패스 권장). 허용 px 범위는 공식 기준이 없어 넉넉히 잡음",
+    "ko": "K-ETA 공식 사이트 자주 묻는 질문: 여권 사진과 같을 필요는 없고 컬러, JPG, 20MB 이하, 모자·스카프·선글라스 같은 액세서리 없이, 화려한 무늬 옷은 피하기를 권장, 얼굴 전체가 정면으로 이미지의 75%, 눈을 뜨고 카메라를 정면으로. 종교적인 이유의 히잡 등은 얼굴 전체(이마부터 턱까지)가 보이면 됨. 모바일 앱은 크기·용량을 자동 조정. 사진 크기·픽셀·배경색 기준은 없어 여권과 같은 3.5×4.5cm 비율에 머리를 사진 높이의 약 75%(32~36mm, 목표 34mm)로, 밝은 단색 배경, 413×531px(300dpi)·500KB 이하로 만듦(사진패스 권장). 허용 px 범위는 외국인등록증(kr-arc)과 같게 둠",
     "en": "K-ETA official FAQ: it does not have to be the same photo as the passport; colour, JPG, not over 20 MB, no accessories such as hats, scarves or sunglasses, less colourful patterned clothing recommended, full face front view (75% of the image), eyes open looking straight at the camera. Religious coverings such as a hijab are fine if the whole face from forehead to chin shows. The mobile app adjusts size automatically. No photo size, pixel or background rule, so the photo uses the 3.5x4.5 cm passport ratio with the head at about 75% of the height (32-36 mm, aim 34 mm), a plain light background and 413x531 px (300 dpi) under 500 KB (our choice)"
   },
   "source": "https://www.k-eta.go.kr/portal/board/viewboardlist.do?tmpltNm=faq2&locale=EN",
