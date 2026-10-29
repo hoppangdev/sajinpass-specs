@@ -18,7 +18,7 @@
     "expression": true,
     "background": true,
     "shadow": true,
-    "manual": ["crownLine", "noGlasses"]
+    "manual": ["crownLine", "glasses"]
   },
   "digital": {
     "px": [827, 1063],
