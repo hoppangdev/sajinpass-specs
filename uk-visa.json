@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "uk-visa",
+  "name": "영국 ETA·비자",
+  "unofficial": ["photoMm", "headMm"],
+  "audience": "adult",
+  "photoMm": [35, 45],
+  "headMm": { "min": 26, "max": 30, "target": 28 },
+  "topMarginMm": 4.5,
+  "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "checks": {
+    "faceCount": true,
+    "headLength": true,
+    "resolution": true,
+    "sharpness": true,
+    "tilt": true,
+    "expression": true,
+    "background": true,
+    "shadow": true,
+    "manual": ["crownLine", "glasses"]
+  },
+  "digital": {
+    "px": [827, 1063],
+    "wRange": [600, 2400],
+    "hRange": [750, 3100],
+    "format": "jpeg",
+    "maxKB": 6000,
+    "minKB": 50,
+    "dpi": 600,
+    "officialMinPx": [600, 750],
+    "unofficial": ["px", "range", "dpi"]
+  },
+  "print": { "sheetIn": [6, 4], "sheetPx": [3600, 2400], "cols": 4, "rows": 2, "cutLines": true, "dpi": 600 },
+  "notes": {
+    "ko": "영국 비자이민청(UKVI) 디지털 얼굴 사진 안내(2026-02-12 게시): 선명하고 초점이 맞은 컬러 사진, 밝은 실내, 프로그램·필터 등으로 고치지 않은 사진, 가로 600픽셀·세로 750픽셀 이상, 50KB 이상 6MB 이하, jpg·jpeg, 세로 사진, 좌우 반전 금지. 다른 사람이나 물건 없이 무늬 없는 밝은 단색 배경에 배경과 뚜렷이 구분되게, 적목 없이, 머리·어깨·상반신이 나오게. 휴대폰·태블릿 사진 가능. 사진을 스캔하거나 다시 찍은 것, 여권·신분증에 있는 것과 같은 사진은 안 됨. 정면을 보고 입을 다문 무표정, 눈을 뜨고 머리카락이 눈을 가리지 않게, 얼굴과 뒤에 그림자 없이, 종교·의료 사유가 아니면 모자 없이. 안경은 꼭 필요할 때만(선글라스·색안경 불가, 테·반사가 눈을 가리면 안 됨). 6세 미만은 정면·무표정이 아니어도 되고 1세 미만은 눈을 감아도 됨. 사진 크기·머리 길이 기준은 없어 여권과 같은 3.5×4.5cm 비율에 어깨와 상반신이 들어가게 머리를 26~30mm(목표 28mm)로, 파일은 827×1063px(600dpi)로 만듦(사진패스 권장). 고치지 않은 사진만 받아 기울기 자동 보정(allowedFixes)을 두지 않음",
+    "en": "UKVI guidance on digital photos of faces (published 12 February 2026): clear, in focus, in colour, taken in a well-lit room, not altered by software or filters, at least 600 px wide and 750 px tall, 50 KB to 6 MB, jpg or jpeg, vertical, not mirrored. No other objects or people, plain light-coloured background in clear contrast, no red eye, head, shoulders and upper body. Phone or tablet photos are fine. No scans or photos of photos, and not the same photo as in the passport or identity card. Facing the camera with a plain expression and mouth closed, eyes open, no hair over the eyes, no shadows, no head covering unless for religious or medical reasons. Glasses only if needed (no sunglasses or tinted lenses, eyes not covered by frames or glare). Under 6 need not face the camera or keep a plain expression; under 1 may have eyes closed. No photo size or head size rule, so the photo uses the 3.5x4.5 cm passport ratio with the head at 26-30 mm (aim 28 mm) to leave room for the shoulders and upper body, and the file is 827x1063 px at 600 dpi (our choice). No automatic straightening, since photos must not be altered"
+  },
+  "source": "https://www.gov.uk/guidance/how-to-take-a-photo-for-a-visa-application-or-permission",
+  "checkedAt": "2026-10-29"
+}
