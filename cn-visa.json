@@ -19,7 +19,7 @@
     "expression": true,
     "background": true,
     "shadow": true,
-    "manual": ["hairLine", "glasses", "takenWithin6Months"]
+    "manual": ["hairLine", "glasses", "noHat", "earsVisible", "takenWithin6Months"]
   },
   "digital": {
     "px": [354, 472],

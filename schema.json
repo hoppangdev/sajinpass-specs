@@ -208,7 +208,12 @@
               "glasses",
               "noGlasses",
               "lenses",
-              "takenWithin6Months"
+              "takenWithin6Months",
+              "noHat",
+              "faceOutline",
+              "eyebrows",
+              "eyesUncovered",
+              "earsVisible"
             ]
           }
         }
