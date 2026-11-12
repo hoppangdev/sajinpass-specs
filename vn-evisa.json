@@ -18,7 +18,7 @@
     "expression": true,
     "background": true,
     "shadow": true,
-    "manual": ["crownLine", "noGlasses", "takenWithin6Months"]
+    "manual": ["crownLine", "noGlasses", "noHat", "takenWithin6Months"]
   },
   "digital": {
     "px": [472, 709],
