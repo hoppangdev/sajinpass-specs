@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "kr-resume-3x4",
-  "name": "반명함판 (이력서 3×4cm)",
+  "name": "반명함판 (이력서 30×40mm)",
   "official": false,
   "audience": "adult",
   "photoMm": [30, 40],
