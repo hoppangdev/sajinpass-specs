@@ -283,9 +283,13 @@
           "$ref": "#/$defs/positiveIntPair"
         },
         "officialMaxKB": {
-          "description": "용량 상한(maxKB)이 사진패스가 정한 값(unofficial의 maxKB)이어도 원문에 있는 더 넉넉한 용량 상한(KB). 파일 검사기가 이보다 크면 실패로 본다.",
+          "description": "용량 상한(maxKB)이 사진패스가 정한 값(unofficial의 maxKB)이어도 원문에 있는 더 넉넉한 용량 상한(KB).",
           "type": "integer",
           "exclusiveMinimum": 0
+        },
+        "officialMaxExclusive": {
+          "description": "원문 상한이 미만이면 true. 없으면 이하. officialMaxKB가 있으면 그 상한에 적용하고, 없으면 원문 값인 maxKB에 적용한다.",
+          "type": "boolean"
         },
         "layout": {
           "description": "제출처가 파일 픽셀로 정한 얼굴 배치. refPx 크기 파일 기준이고 다른 크기면 가로 비율로 늘린다. faceWidthPx는 얼굴 폭 범위, eyeFromBottomMinPx는 파일 아래 끝에서 눈 가운데 선까지의 최소 거리, eyeDistanceMinPx는 두 눈 사이 최소 거리, crownFromTopPx는 파일 위 끝에서 머리 꼭대기(headTop)까지의 거리 범위.",
