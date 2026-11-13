@@ -29,7 +29,6 @@
     "dpi": 300,
     "officialMaxKB": 2000,
     "officialMaxExclusive": true,
-    "officialMaxBytesPerKB": 1024,
     "unofficial": ["px", "range", "maxKB"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 3, "rows": 1, "cutLines": true },
