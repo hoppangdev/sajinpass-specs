@@ -217,6 +217,7 @@
               "eyebrows",
               "eyesUncovered",
               "earsVisible",
+              "scan300ppi",
               "scan600ppi",
               "hairContrast"
             ]
@@ -262,7 +263,9 @@
               "jpeg",
               "png",
               "gif",
-              "jp2"
+              "jp2",
+              "bmp",
+              "heic"
             ]
           },
           "minItems": 1,
@@ -271,6 +274,9 @@
             "const": "jpeg"
           }
         },
+        "sRGB": { "type": "boolean" },
+        "regularVisaMaxKB": { "type": "integer", "minimum": 1 },
+        "recommendedMaxKB": { "type": "integer", "minimum": 1 },
         "maxKB": {
           "type": "integer",
           "exclusiveMinimum": 0
@@ -490,6 +496,7 @@
       "type": "string",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
     },
+    "childToleratedHeadMm": { "$ref": "#/$defs/positiveIntPair" },
     "toleratedHeadMm": {
       "description": "성인 머리 길이의 허용 경계(mm). 권장 범위와 이 경계 사이면 직접 확인한다.",
       "$ref": "#/$defs/positivePair"
