@@ -24,6 +24,7 @@
     "px": [1200, 1600],
     "wRange": [600, 2400],
     "hRange": [800, 3200],
+    "preferredRatio": true,
     "format": "jpeg",
     "maxKB": 3500,
     "minKB": 70,

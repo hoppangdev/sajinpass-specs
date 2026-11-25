@@ -27,6 +27,7 @@
     "wRange": [354, 420],
     "hRange": [472, 560],
     "format": "jpeg",
+    "rgb24": true,
     "maxKB": 120,
     "minKB": 40,
     "layout": { "refPx": [354, 472], "faceWidthPx": [191, 219], "eyeFromBottomMinPx": 256, "eyeDistanceMinPx": 60, "crownFromTopPx": [10, 70] },

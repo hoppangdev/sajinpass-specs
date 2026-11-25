@@ -8,7 +8,7 @@
   "headMm": { "min": 26, "max": 30, "target": 28 },
   "topMarginMm": 4.5,
   "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
-  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true, "closedEyesUnderOne": true },
   "checks": {
     "faceCount": true,
     "headLength": true,
