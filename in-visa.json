@@ -30,6 +30,7 @@
     "dpi": 300,
     "officialMinPx": [350, 350],
     "officialMaxKB": 1000,
+    "regularVisaMaxKB": 300,
     "unofficial": ["px", "range", "maxKB", "dpi"]
   },
   "print": { "headPercent": 75, "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 2, "rows": 1, "cutLines": true },
@@ -40,5 +41,5 @@
   },
   "source": "https://indianvisaonline.gov.in/evisa/tvoa.html",
   "sourceDigital": "https://indianvisaonline.gov.in/visa/instruction.html",
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-26"
 }
