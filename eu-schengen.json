@@ -5,9 +5,10 @@
   "audience": "adult",
   "photoMm": [35, 45],
   "headMm": { "min": 32, "max": 36, "target": 34 },
+  "toleratedHeadMm": [27, 40],
   "topMarginMm": 4.5,
   "background": { "kind": "light", "minLuma": 170, "maxStd": 25 },
-  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true },
+  "expression": { "mouthOpen": false, "smile": false, "eyesOpen": true, "closedEyesUnderOne": true },
   "checks": {
     "faceCount": true,
     "headLength": true,
@@ -17,7 +18,7 @@
     "expression": true,
     "background": true,
     "shadow": true,
-    "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
+    "manual": ["hairContrast", "crownLine", "glasses", "lenses", "takenWithin6Months"]
   },
   "digital": {
     "px": [827, 1063],
@@ -26,7 +27,7 @@
     "format": "jpeg",
     "maxKB": 1000,
     "dpi": 600,
-    "unofficial": ["px", "range", "maxKB"]
+    "unofficial": ["px", "range", "maxKB", "dpi"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [3600, 2400], "cols": 4, "rows": 2, "cutLines": true, "dpi": 600 },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },

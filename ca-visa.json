@@ -17,13 +17,15 @@
     "expression": true,
     "background": true,
     "shadow": true,
-    "manual": ["crownLine", "glasses", "lenses", "takenWithin6Months"]
+    "manual": ["scan600ppi", "crownLine", "glasses", "lenses", "takenWithin6Months"]
   },
   "digital": {
     "px": [827, 1063],
     "wRange": [420, 2400],
     "hRange": [540, 3100],
     "format": "jpeg",
+    "rgb24": true,
+    "accept": ["jpeg", "jp2"],
     "maxKB": 240,
     "minKB": 60,
     "dpi": 600,

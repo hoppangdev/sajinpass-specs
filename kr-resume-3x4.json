@@ -3,6 +3,7 @@
   "id": "kr-resume-3x4",
   "name": "반명함판 (이력서 30×40mm)",
   "official": false,
+  "unofficial": ["headMm"],
   "audience": "adult",
   "photoMm": [30, 40],
   "headMm": { "min": 28, "max": 32, "target": 30 },
@@ -27,7 +28,7 @@
     "format": "jpeg",
     "maxKB": 500,
     "dpi": 300,
-    "unofficial": ["px", "range", "maxKB"]
+    "unofficial": ["px", "range", "maxKB", "dpi"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },

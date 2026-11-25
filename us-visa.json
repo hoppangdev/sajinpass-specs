@@ -25,8 +25,12 @@
     "wRange": [600, 1200],
     "hRange": [600, 1200],
     "format": "jpeg",
+    "rgb24": true,
+    "maxCompressionRatio": 20,
+    "eyeHeightPercent": [56, 69],
     "maxKB": 240,
-    "dpi": 300
+    "dpi": 300,
+    "unofficial": ["dpi"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 2, "rows": 1, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
