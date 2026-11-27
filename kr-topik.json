@@ -35,9 +35,9 @@
     "sizeTableSource": "https://www.110.go.kr/data/counselView.do?num=A01_660243"
   },
   "notes": {
-    "ko": "TOPIK 자주 묻는 질문 '사진 규격 안내': 법무부 <외국인등록용 사진 규격>을 준용(가로 3.5cm × 세로 4.5cm, 얼굴 길이 2.5~3.5cm, 6개월 이내 흰색 바탕 정면 얼굴 사진), 200KB 이내 jpg·jpeg만 등록, 사진은 수험표와 성적증명서에 나옴. 규격에 맞지 않거나 시험 날 얼굴이 사진과 다르면 응시 불가·성적 무효가 될 수 있음. 공식 픽셀 기준 없음, 외국인등록증과 같은 413×531px로 만듦",
-    "en": "TOPIK FAQ 'photo size': follows the Ministry of Justice foreigner registration photo rules (3.5x4.5 cm, face length 2.5-3.5 cm, front view on a white background, taken within 6 months), JPG/JPEG up to 200 KB, and the photo appears on the admission ticket and score report. No official pixel size, so the file is 413x531 px like the ARC photo"
+    "ko": "TOPIK 자주 묻는 질문 '사진 규격 안내': 법무부 <외국인등록용 사진 규격>을 준용(가로 3.5cm × 세로 4.5cm, 얼굴 길이 2.5~3.5cm, 6개월 이내 흰색 바탕 정면 얼굴 사진), 200KB 이내 jpg·jpeg만 등록, 사진은 수험표와 성적증명서에 나옴. 규격에 맞지 않거나 시험 날 얼굴이 사진과 다르면 응시 불가·성적 무효가 될 수 있음. TOPIK 공식 안내의 표준 사진 예시는 413×531px, 사진규격 본문은 413×532px로 적혀 있어요. 사진패스는 표준 사진 예시 크기인 413×531px로 만들어요. JPG·JPEG 파일은 저장한 뒤 200KB 이하여야 해요.",
+    "en": "TOPIK FAQ 'photo size': follows the Ministry of Justice foreigner registration photo rules (3.5x4.5 cm, face length 2.5-3.5 cm, front view on a white background, taken within 6 months), JPG/JPEG up to 200 KB, and the photo appears on the admission ticket and score report. The official sample is 413x531 px and the official requirements text says 413x532 px. Sajinpass outputs the sample size, 413x531 px"
   },
-  "source": "https://www.topik.go.kr/TWINFO/TWINFO0030.do",
-  "checkedAt": "2026-11-17"
+  "source": "https://www.topik.go.kr/TWGUID/TWGUID0070.do",
+  "checkedAt": "2026-11-26"
 }
