@@ -220,9 +220,15 @@
               "earsVisible",
               "scan300ppi",
               "scan600ppi",
-              "hairContrast"
+              "hairContrast",
+              "takenRecently"
             ]
           }
+        },
+        "manualByChannel": {
+          "type": "object",
+          "propertyNames": { "enum": ["online", "regularVisaOnline", "scan", "print"] },
+          "additionalProperties": { "$ref": "#/properties/checks/properties/manual" }
         }
       }
     },
@@ -276,6 +282,7 @@
           }
         },
         "sRGB": { "type": "boolean" },
+        "regularVisaRangePx": { "$ref": "#/$defs/positiveIntPair" },
         "regularVisaMaxKB": { "type": "integer", "minimum": 1 },
         "recommendedMaxKB": { "type": "integer", "minimum": 1 },
         "maxKB": {
