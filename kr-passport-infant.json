@@ -17,6 +17,8 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
+    "borderless": true,
     "manual": ["crownLine", "aloneInPhoto", "noHat", "takenWithin6Months"]
   },
   "digital": {

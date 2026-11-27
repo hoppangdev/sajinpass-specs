@@ -19,6 +19,7 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "borderless": true,
     "manual": ["hairLine", "glasses", "noHat", "earsVisible", "takenWithin6Months"]
   },
   "digital": {

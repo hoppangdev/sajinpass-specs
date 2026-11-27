@@ -18,9 +18,11 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
     "manual": ["crownLine", "glasses", "noHat", "takenWithin6Months"]
   },
   "digital": {
+    "primaryInput": "scan",
     "frameMm": [30.54545, 40],
     "px": [126, 165],
     "wRange": [126, 126],

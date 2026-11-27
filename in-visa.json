@@ -18,6 +18,8 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
+    "borderless": true,
     "manual": ["hairLine", "takenWithin6Months"],
     "manualByChannel": { "online": ["noGlasses"], "print": ["eyesUncovered"] }
   },

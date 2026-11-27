@@ -18,6 +18,7 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
     "manual": ["crownLine", "glasses", "noHat", "takenWithin6Months"]
   },
   "digital": {

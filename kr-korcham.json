@@ -18,9 +18,11 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
     "manual": ["crownLine", "glasses", "noHat"]
   },
   "digital": {
+    "pxConvertedByIssuer": true,
     "px": [400, 500],
     "wRange": [200, 4000],
     "hRange": [250, 5000],

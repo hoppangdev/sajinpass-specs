@@ -200,6 +200,14 @@
         "shadow": {
           "type": "boolean"
         },
+        "requireColour": {
+          "description": "제출처가 컬러 사진을 요구하면 흑백을 점검한다. 파일의 24비트 RGB 요건(rgb24)과 별도다.",
+          "type": "boolean"
+        },
+        "borderless": {
+          "description": "공식 규격에서 테두리를 허용하지 않으면 제출 방식별 확인 항목 뒤에 가장자리 확인을 붙인다.",
+          "type": "boolean"
+        },
         "manual": {
           "description": "사용자가 직접 확인하는 항목.",
           "type": "array",
@@ -245,9 +253,17 @@
         "dpi"
       ],
       "properties": {
+        "primaryInput": {
+          "description": "제출 파일을 준비하는 기본 방식. scan은 인화한 사진을 스캔해서 내는 방식이다. 없으면 online을 쓴다.",
+          "enum": ["online", "scan"]
+        },
         "px": {
           "description": "내보내는 크기 [가로, 세로] px.",
           "$ref": "#/$defs/positiveIntPair"
+        },
+        "pxConvertedByIssuer": {
+          "description": "공식 픽셀 범위나 최소값이 없을 때 digital.px를 등록 뒤 제출처가 변환하는 크기로 표시한다.",
+          "type": "boolean"
         },
         "wRange": {
           "description": "허용 가로 범위 [최소, 최대] px.",
@@ -285,6 +301,10 @@
         "regularVisaRangePx": { "$ref": "#/$defs/positiveIntPair" },
         "regularVisaMaxKB": { "type": "integer", "minimum": 1 },
         "recommendedMaxKB": { "type": "integer", "minimum": 1 },
+        "recommendedMaxIsIdeal": {
+          "description": "제출처가 권장 용량을 이상적인 값으로 안내한다. 권장 용량을 초과했을 때의 판정은 같다.",
+          "type": "boolean"
+        },
         "maxKB": {
           "type": "integer",
           "exclusiveMinimum": 0
@@ -523,6 +543,7 @@
               "mouth",
               "smile",
               "eyes",
+              "photoColour",
               "background",
               "shadow",
               "lighting"

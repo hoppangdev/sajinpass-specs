@@ -29,6 +29,7 @@
     "accept": ["jpeg", "jp2"],
     "maxKB": 240,
     "recommendedMaxKB": 240,
+    "recommendedMaxIsIdeal": true,
     "minKB": 60,
     "dpi": 600,
     "officialMinPx": [420, 540],
