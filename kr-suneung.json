@@ -17,6 +17,8 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
+    "borderless": true,
     "manual": ["crownLine", "glasses", "noHat", "eyesUncovered", "takenWithin6Months"]
   },
   "digital": {
@@ -29,6 +31,13 @@
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "useRules": {
+    "basis": "suneung",
+    "banned": ["background", "brightness", "pad"]
+  },
+  "presentation": {
+    "nextSteps": "universityApplication"
+  },
   "notes": {
     "ko": "원서접수일 기준 6개월 이내 촬영한 천연색 상반신 정면 여권용 규격(머리 길이 3.2~3.6cm). 머리카락·안경테로 눈을 가리거나 모자를 쓰면 안 되고, 배경은 균일한 흰색에 테두리가 없어야 함. 온라인 사전입력은 JPG 500KB 이하·413×531px 권장(395~431×507~550px만 업로드), 현장 접수는 인화한 사진 2매"
   },

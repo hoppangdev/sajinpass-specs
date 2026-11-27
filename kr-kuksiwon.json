@@ -18,6 +18,7 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
     "manual": ["crownLine", "glasses", "noHat", "takenWithin6Months"]
   },
   "digital": {
@@ -34,6 +35,9 @@
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "presentation": {
+    "nextSteps": "examPrint"
+  },
   "notes": {
     "ko": "한국보건의료인국가시험원 자주 묻는 질문: 6개월 이내 촬영, 모자를 쓰지 않고 정면을 본 상반신 컬러 사진, 3.5×4.5cm, 가로 276px·세로 354px 이상, 해상도 200dpi 이상, JPG·PNG. 시험 날 감독관이 사진으로 본인 확인을 하고 합격 뒤 면허증에도 쓰임. 머리 길이·배경색·용량 기준은 원문에 없어 여권 비율(머리 32~36mm), 밝은 단색 배경, 413×531px(300dpi)·500KB 이하로 만듦(사진패스 권장)"
   },

@@ -17,6 +17,8 @@
     "expression": true,
     "background": true,
     "shadow": true,
+    "requireColour": true,
+    "borderless": true,
     "manual": ["crownLine", "aloneInPhoto", "noHat", "takenWithin6Months"]
   },
   "digital": {
@@ -29,6 +31,14 @@
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "useRules": {
+    "basis": "passport",
+    "banned": ["background", "brightness", "pad"]
+  },
+  "presentation": {
+    "nextSteps": "firstPassport",
+    "gov24Renewal": true
+  },
   "notes": {
     "ko": "36개월 이하 영유아는 입을 조금 벌려도 됨. 그 밖에는 성인과 같음(6개월 이내 촬영, 눈을 뜨고 정면, 보호자·사물이 보이지 않게)"
   },
