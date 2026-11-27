@@ -29,6 +29,14 @@
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "useRules": {
+    "basis": "passport",
+    "banned": ["background", "brightness", "pad"]
+  },
+  "presentation": {
+    "nextSteps": "passportRenewal",
+    "gov24Renewal": true
+  },
   "notes": {
     "ko": "발급 신청일 기준 6개월 이내 촬영, 무표정, 입 다물기, 컬러렌즈·색안경 금지. 모자·머리띠·머리 덮개로 머리 가림 불가(외교부 여권 사진 규정), 머리카락이 눈·얼굴 윤곽(볼·광대) 가림 불가, 양쪽 눈썹이 각각 70% 이상 보이거나 한쪽 눈썹이 전부 보이고 다른 쪽은 절반 이상 보여야 해요."
   },

@@ -28,10 +28,15 @@
     "format": "jpeg",
     "maxKB": 1000,
     "dpi": 600,
-    "unofficial": ["px", "range", "maxKB", "dpi"]
+    "unofficial": ["px", "range", "maxKB", "dpi", "format"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [3600, 2400], "cols": 4, "rows": 2, "cutLines": true, "dpi": 600 },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "allowChildFrontalException": true,
+  "presentation": {
+    "nextSteps": "schengenTravel",
+    "childNotes": "de"
+  },
   "notes": {
     "ko": "주한독일대사관: 3.5×4.5cm, 6개월 이내, 얼굴(턱~정수리, 머리카락 제외) 32~36mm(사진의 70~80%, 27mm 미만·40mm 초과일 때만 반려), 밝은 단색 배경(독일 사진 안내는 무채색 회색을 가장 좋다고 하며, 밝은 머리색에는 중간 회색, 어두운 머리색에는 밝은 회색을 권장. 워킹홀리데이는 흰색). 독일은 9세 이하의 얼굴 길이가 22~36mm이고 정수리 측정 오차를 고려해 17~40mm까지 허용해요. 5세 이하는 정면 시선과 무표정에 예외가 있어요. 프랑스(France-Visas)도 ICAO 기준 얼굴 70~80%·밝은 단색 배경. 독일 안내가 인화 해상도 600dpi 이상을 요구해 인화지·파일 모두 같은 해상도로 만듦(사진 827×1063px). 종이 사진을 내는 규격이라 공식 픽셀·용량 기준은 없음. 827×1063px는 3.5×4.5cm를 그 해상도로 바꾼 값이고 1MB 이하는 사진패스 권장",
     "en": "German Embassy Seoul: 35x45 mm, within 6 months, face chin to crown (excluding hair) 32-36 mm (70-80% of the photo; rejected only below 27 mm or above 40 mm), plain light background (the German photo guide prefers neutral grey and recommends medium grey for light hair and light grey for dark hair; white for working holiday). France-Visas follows ICAO (face 70-80%, plain light background). The German instructions require a print resolution of at least 600 dpi, so the sheet and file are 600 dpi (827x1063 px). No official pixel or file size rule: 827x1063 px is 35x45 mm at 600 dpi, and under 1 MB is our recommendation"

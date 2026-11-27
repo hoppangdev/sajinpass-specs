@@ -27,10 +27,18 @@
     "format": "jpeg",
     "maxKB": 500,
     "dpi": 300,
-    "unofficial": ["px", "range", "maxKB", "dpi"]
+    "unofficial": ["px", "range", "maxKB", "dpi", "format"]
   },
   "print": { "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 4, "rows": 2, "cutLines": true },
   "allowedFixes": { "rotate": { "maxDeg": 6 } },
+  "useRules": {
+    "basis": "id",
+    "banned": ["background", "brightness", "pad"]
+  },
+  "presentation": {
+    "nextSteps": "idCardApplication",
+    "backgroundText": "whitePreferred"
+  },
   "notes": {
     "ko": "6개월 이내 촬영, 모자 없는 상반신 컬러 사진(주민등록법 시행령 제36조, 도로교통법 시행규칙 제57조). 법령에 머리 길이 기준이 없어 여권 기준(32~36mm)으로 맞춤. 행정안전부는 흰색 배경을 권장하고 옅은 단색도 허용해요."
   },
