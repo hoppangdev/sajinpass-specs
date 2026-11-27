@@ -35,6 +35,7 @@
     "officialMaxKB": 1000,
     "regularVisaMaxKB": 300,
     "regularVisaRangePx": [350, 1000],
+    "regularVisaBackground": "light",
     "unofficial": ["px", "range", "maxKB", "dpi"]
   },
   "print": { "headPercent": 75, "sheetIn": [6, 4], "sheetPx": [1800, 1200], "cols": 2, "rows": 1, "cutLines": true },

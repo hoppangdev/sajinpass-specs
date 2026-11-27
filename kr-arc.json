@@ -19,7 +19,7 @@
     "shadow": true,
     "requireColour": true,
     "borderless": true,
-    "manual": ["crownLine", "glasses", "lenses", "noHat", "takenWithin6Months"]
+    "manual": ["crownLine", "glasses", "lenses", "noHat", "earsVisible", "takenWithin6Months"]
   },
   "digital": {
     "px": [413, 531],

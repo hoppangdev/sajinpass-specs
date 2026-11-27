@@ -299,6 +299,16 @@
         },
         "sRGB": { "type": "boolean" },
         "regularVisaRangePx": { "$ref": "#/$defs/positiveIntPair" },
+        "regularVisaBackground": { "enum": ["white", "light"] },
+        "officialPxReferences": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["example", "text"],
+          "properties": {
+            "example": { "$ref": "#/$defs/positiveIntPair" },
+            "text": { "$ref": "#/$defs/positiveIntPair" }
+          }
+        },
         "regularVisaMaxKB": { "type": "integer", "minimum": 1 },
         "recommendedMaxKB": { "type": "integer", "minimum": 1 },
         "recommendedMaxIsIdeal": {
